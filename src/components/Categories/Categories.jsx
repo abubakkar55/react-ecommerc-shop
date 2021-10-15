@@ -4,7 +4,7 @@ import CategoriesItem from '../CategoriesItem/CategoriesItem'
 
 const Categories = () => {
     return (
-        <div className="grid grid-cols-3 py-20">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 py-8 md:py-20">
             {
                 categData.map(item => {
                     return (

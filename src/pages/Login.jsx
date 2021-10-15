@@ -5,7 +5,6 @@ import { FcGoogle } from "react-icons/fc";
 const Login = () => {
 
     const { firebase: { googleSignIn, getEmail, getPassword, logInUser, setUser, setError, setIsLoading } } = useCustomContext();
-
     const location = useLocation();
 
     const redirect_URL = location.state?.from || "/";

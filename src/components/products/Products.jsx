@@ -5,12 +5,12 @@ import productsData from './../../data/ProductsData';
 
 const Products = () => {
     return (
-        <div className="px-20">
-            <h2 className="text-4xl font-bold pt-16 text-center">Our Featured Products </h2>
-            <div className="my-10 flex items-center justify-between">
+        <div className="px-6 md:px-20">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold pt-7 md:pt-16 text-center">Our Featured Products </h2>
+            <div className="my-5 md:my-10 flex items-center justify-between">
                 <div>
                 
-                    <span className="text-2xl font-semibold">Filter Products : </span>
+                    <span className="text-xl md:text-2xl font-semibold">Filter Products : </span>
                     <select name="" id="" className="outline-none border p-2 mr-4 ">
                         {
                             colors.map(pd => <option value={pd.color}> {pd.color} </option>)
@@ -25,7 +25,7 @@ const Products = () => {
 
                 </div>
                 <div>
-                    <span className="text-2xl font-semibold">Sort Products : </span>
+                    <span className="text-xl md:text-2xl font-semibold">Sort Products : </span>
                     <select name="" id="" className="outline-none border p-2 ">
                         <option value="regular"> Regular </option>
                         <option value="price(asec)">price(asec) </option>
@@ -35,7 +35,7 @@ const Products = () => {
                 </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-7">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
 
                 {
                     productsData.map(pd => {

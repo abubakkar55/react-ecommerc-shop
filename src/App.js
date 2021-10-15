@@ -13,6 +13,7 @@ import LogOut from './pages/LogOut';
 import PrivateRoute from './components/Private/PrivateRoute';
 import ProductDetails from './pages/ProductDetails';
 import OrderReview from './pages/OrderReview';
+import Checkout from './pages/Checkout';
 function App() {
   return (
     <div className="App">
@@ -36,6 +37,10 @@ function App() {
 
             <PrivateRoute path="/product_details/:pdId" >
               <ProductDetails />
+            </PrivateRoute>
+
+            <PrivateRoute path="/checkout" >
+              <Checkout />
             </PrivateRoute>
             <Route path="*" component={NotFound}></Route>
 

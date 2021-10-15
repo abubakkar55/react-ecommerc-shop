@@ -20,7 +20,7 @@ const Cart = () => {
     }
 
     return (
-        <div className="w-1/3 shadow-lg p-7 rounded-xl">
+        <div className=" shadow-lg p-7 rounded-xl">
             <h3 className="text-center text-2xl font-bold mb-6">ORDER SUMMARY </h3>
             <div className="flex justify-between font-semibold text-xl mb-3  border-b pb-2">
                 <h3>Subtotal: </h3>

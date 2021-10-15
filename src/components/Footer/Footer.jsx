@@ -4,7 +4,7 @@ import { FaFacebookF, FaLinkedinIn, FaInstagram, FaTwitter, FaPhoneAlt, FaLocati
 const Footer = () => {
     return (
         <div>
-            <div className="p-10 grid grid-cols-3 gap-9 place-items-center h-80 ">
+            <div className="p-5 md:p-10 grid md:grid-cols-2 lg:grid-cols-3 gap-9 md:place-items-center">
                 <div >
                     <h2 className="text-2xl font-bold mb-3">ABShop </h2>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aliquam quas reprehenderit ex, animi quaerat a ut voluptatem nihil ullam vel vitae placeat eius in explicabo saepe itaque perspiciatis illo!</p>

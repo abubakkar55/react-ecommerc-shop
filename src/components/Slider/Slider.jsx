@@ -8,20 +8,31 @@ import "./Slider.css"
 const Slider = () => {
     return (
         <div className="h-screen bg-gray-200">
-            <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}  showThumbs={true} transitionTime={1200}>
+            <Carousel showArrows={true} autoPlay={true} infiniteLoop={true} showThumbs={true} transitionTime={1200}>
                 {
                     data.map(item => {
                         return (
-                            <div className="flex items-center px-7 gap-7">
-                                <div className="w-1/2 h-screen" style={{backgroundImage: `url(${item.img})`, backgroundRepeat: "no-repeat", backgroundPosition: "left center", backgroundSize: "140%"}}>
+                            <div className="flex flex-col md:flex-row items-center px-7 md:gap-7">
+
+                                <div className="w-3/4 h-72 md:w-1/2 md:h-screen"
+                                    style={{
+                                        backgroundImage: `url(${item.img})`,
+                                        backgroundRepeat: "no-repeat", backgroundPosition: "left center", backgroundSize: "140%"
+                                    }}>
                                 </div>
-                                <div className="w-1/2 text-left">
-                                    <h3 className="text-3xl">{item.subTitle} </h3>
-                                    <h1 className="text-5xl font-semibold my-6">{item.title} </h1>
+
+                                <div className="w-full md:w-1/2 text-left">
+                                    
+                                    <h3
+                                        className="text-xl md:text-3xl">{item.subTitle}
+                                    </h3>
+
+                                    <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold my-3 md:my-6">{item.title} </h1>
+                                    
                                     <NavLink to="/shop"
-                                        className="px-8 border-2 border-black flex items-center max-w-max py-3 gap-2 hover:bg-black hover:text-white">
+                                        className="px-5 md:px-8 border-2 border-black flex items-center max-w-max py-3 gap-1 hover:bg-black hover:text-white">
                                         <span> <ShoppingCartIcon className="h-5" /> </span>
-                                        <span> Shop Now </span>
+                                        <span className="font-semibold"> {item?.btn} </span>
                                     </NavLink>
                                 </div>
                             </div>

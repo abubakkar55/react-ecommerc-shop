@@ -10,17 +10,17 @@ const ProductDetails = () => {
     const { products: { handleStoredProduct } } = useCustomContext();
     //const { title, price, image } = findPd;
     return (
-        <div className="p-16">
-            <div className="flex gap-6 items-center">
-                <div className="w-1/2">
-                    <img className="w-3/5 h-72" src={findPd?.image} alt={findPd?.title} />
+        <div className="p-8 md:p-16">
+            <div className="flex flex-col md:flex-row gap-6 md:items-center">
+                <div className="md:w-1/2">
+                    <img className="w-52 md:w-3/5 mx-auto md:mx-0 h-52 md:h-72" src={findPd?.image} alt={findPd?.title} />
                 </div>
-                <div className="w-1/2">
-                    <h3 className="text-2xl mb-6 font-semibold">{findPd?.title} </h3>
-                    <p className="mb-7 w-3/4 font-medium"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis excepturi magnam modi quas distinctio vitae voluptate animi sit reprehenderit eius sint numquam ex itaque minus, ducimus quis amet necessitatibus corrupti.</p>
+                <div className="md:w-1/2">
+                    <h3 className="text-xl md:text-2xl mb-3 md:mb-6 font-semibold">{findPd?.title} </h3>
+                    <p className="mb-3 md:mb-7 md:w-3/4 font-medium"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis excepturi magnam modi quas distinctio vitae voluptate animi sit reprehenderit eius sint numquam ex itaque minus, ducimus quis amet necessitatibus corrupti.</p>
                     <h3 className="text-3xl mb-6">${findPd?.price} </h3>
 
-                    <div className="flex justify-between items-center w-2/4">
+                    <div className="flex justify-between items-center md:w-2/4">
                         <div className="flex gap-2 items-center">
                             <h3 className="text-2xl">Color :</h3>
                             <div className="w-5 h-5 bg-blue-800 rounded-full"></div>
